@@ -1,0 +1,18 @@
+<mat-form-field>
+    <mat-label>Filtrar Produtos</mat-label>
+    <input matInput (input)="filterProducts($event.target.value)">
+  </mat-form-field>
+  
+  <div fxLayout="row" fxLayoutWrap="wrap">
+    <mat-card *ngFor="let product of filteredProducts" class="product-card">
+      <img mat-card-image [src]="product.image" alt="{{ product.name }}">
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-content>{{ product.description }}</mat-card-content>
+      <p>Preço: R$ {{ product.price }}</p>
+      <mat-chip-list>
+        <mat-chip *ngFor="let spec of product.specs">{{ spec }}</mat-chip>
+      </mat-chip-list>
+      <button mat-button color="primary" [routerLink]="['/product', product.id]">Ver Mais</button>
+    </mat-card>
+  </div>
+  

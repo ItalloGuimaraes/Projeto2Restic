@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()" #productForm="ngForm">
+    <mat-form-field>
+      <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Descrição" [(ngModel)]="product.description" name="description" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Preço" [(ngModel)]="product.price" name="price" type="number" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="URL da Imagem" [(ngModel)]="product.image" name="image" required>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+  </form>
+  

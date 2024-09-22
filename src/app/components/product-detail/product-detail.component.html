@@ -1,0 +1,11 @@
+<mat-card *ngIf="product">
+    <img mat-card-image [src]="product.image" alt="{{ product.name }}">
+    <mat-card-title>{{ product.name }}</mat-card-title>
+    <mat-card-content>{{ product.description }}</mat-card-content>
+    <ul>
+      <li *ngFor="let spec of product.specs">{{ spec }}</li>
+    </ul>
+    <p>Preço: R$ {{ product.price }}</p>
+    <p>Avaliação: {{ product.rating }} / 5</p>
+  </mat-card>
+  
