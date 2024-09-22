@@ -12,11 +12,11 @@ Para executar a aplicação, siga os passos abaixo:
    git clone https://github.com/ItalloGuimaraes/Projeto2Restic.git
    cd Projeto2Restic
 Tecnologias Utilizadas:
-Angular
-Angular Material
-json-server
-TypeScript
-HTML
+Angular,
+Angular Material,
+json-server,
+TypeScript,
+HTML,
 CSS
 
 Possíveis Melhorias Futuras:
